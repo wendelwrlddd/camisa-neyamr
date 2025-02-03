@@ -23,6 +23,7 @@
 
 /* Corpo e fundo da página */
 body {
+  overflow-x: hidden;
   min-height: 100vh;
   width: 100%;
   margin: 0;
