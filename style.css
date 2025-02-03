@@ -1,5 +1,20 @@
 @charset "UTF-8";
 /* Reset e box-sizing global */
+/* Forçando prefixo para o Safari */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* Aplicando a animação no seu elemento */
+.fade-in {
+  animation: fadeIn 2s ease-in-out;
+  -webkit-animation: fadeIn 2s ease-in-out; /* Prefixo do Safari */
+}
+
 *, *:before, *:after {
   box-sizing: border-box;
   margin: 0;
