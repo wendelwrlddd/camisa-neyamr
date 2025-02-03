@@ -9,11 +9,21 @@ const imagens = [
 // Inicializando a variável para controlar o índice
 let indiceAtual = 0;
 
+function rd(){ 
+    var im = document.querySelector("#imagem")
+    im.classList.add("animate__fadeIn")
+    setTimeout(() => {
+        im.classList.remove("animate__fadeIn")
+    }, 500);
+}
+
 // Função para alterar a imagem
 function alterarImagem() {
+    
     // Pegando o elemento de imagem do HTML
     const imagemElement = document.getElementById("imagem");
 
+    
     // Aumentando o índice atual
     indiceAtual = indiceAtual + 1;
 
@@ -25,5 +35,6 @@ function alterarImagem() {
     // Alterando a imagem exibida
     imagemElement.src = imagens[indiceAtual];
 }
+
 
 
